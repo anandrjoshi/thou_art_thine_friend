@@ -1,1 +1,4 @@
 This is my first commit in GitHub.
+GUID: // {717F7EF8-04F0-4DB1-A60B-143C79F098D0}
+IMPLEMENT_OLECREATE(<<class>>, <<external_name>>, 
+0x717f7ef8, 0x4f0, 0x4db1, 0xa6, 0xb, 0x14, 0x3c, 0x79, 0xf0, 0x98, 0xd0);
