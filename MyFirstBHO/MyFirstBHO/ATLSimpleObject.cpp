@@ -20,6 +20,7 @@ STDMETHODIMP CATLSimpleObject::SetSite(IUnknown *pUnkSite)
 {
 	if(pUnkSite != NULL)
 	{
+		//check if connection established successfully.
 		HRESULT hr = pUnkSite->QueryInterface(IID_IWebBrowser2, (void**)&m_spWebBrowser);
 		if(SUCCEEDED(hr))
 		{
@@ -30,6 +31,7 @@ STDMETHODIMP CATLSimpleObject::SetSite(IUnknown *pUnkSite)
 	}
 	else
 	{
+		//if connection established break it as its no longer needed
 		if(m_fAdvised)
 		{
 			DispEventUnadvise(m_spWebBrowser);
@@ -70,6 +72,7 @@ void STDMETHODCALLTYPE CATLSimpleObject::OnDocumentComplete(IDispatch *pDisp, VA
 		m_spWebBrowser->get_LocationURL(URLStr);
 		CComBSTR bstr(APIStr);
 		bstr.AppendBSTR(*URLStr);
+
 		//Given API string + captured URL
 		BSTR TotalStr = bstr.Detach();
 

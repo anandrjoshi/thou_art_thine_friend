@@ -64,6 +64,7 @@ END_COM_MAP()
 public:
 private:
 	CComPtr<IWebBrowser2> m_spWebBrowser;
+	//track if object has established a connection
 	bool m_fAdvised;
 
 
