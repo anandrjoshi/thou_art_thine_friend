@@ -26,6 +26,7 @@ e. creating a toolbar entry in IE
 f. web based programming using HTTP sessions
 g. adding a registry entry from VS2010 application
 f. using VS2010 in Administrator mode (spent a lot of time on figuring this out)
+g. creating a native dll and using iexplore.exe to open it
 
 It was an exciting weekend where I got to learn a lot of things. Things that I would
 not have thought of on my own.
