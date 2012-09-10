@@ -1,0 +1,34 @@
+// MyFirstBHO.idl : IDL source for MyFirstBHO
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (MyFirstBHO.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(34C2E83A-9B2B-436C-B50E-FF02D5F89282),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface IATLSimpleObject : IDispatch{
+};
+[
+	uuid(383BC23F-3A29-47E8-86B7-2B64CB5BEE2F),
+	version(1.0),
+]
+library MyFirstBHOLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(EA854828-7C25-43D8-872E-248A242788E9)		
+	]
+	coclass ATLSimpleObject
+	{
+		[default] interface IATLSimpleObject;
+	};
+};
+
