@@ -1,0 +1,32 @@
+-------------------------------------------------------------------------------
+			Development Expereince and Status Report
+-------------------------------------------------------------------------------	
+
+Status Report:
+1. I have a BHO that attaches itself to an instance of IE and which is destroyed 
+when that session of IE is closed.
+2. I am able to get the URL of the page currently being viewed.
+3. I am able to create an HTTP session and connections and get a response 
+with other websites like www.google.com.
+But I am unable to establish connection with the given API. I tried to put in the
+URL for the API directly on the browser I still got Error 400. I tried several 
+combinations but still no luck. This is where my lack of knowledge about web 
+development betrayed me. I tried a lot of combinations with the given API's URL 
+to atleast get some response from it, but failed. I guess this is how an API works.
+It does not allow random URLs to establish connection.
+
+Development Experience:
+1. I had never before done a lot of things that I did in last couple of days. To
+name a few,
+a. addition of registry entries
+b. creating a dll and ATL project in VS2010
+c. BHO: never even heard of such a thing
+d. adding an extension for IE as a BHO
+e. creating a toolbar entry in IE
+f. web based programming using HTTP sessions
+g. adding a registry entry from VS2010 application
+f. using VS2010 in Administrator mode (spent a lot of time on figuring this out)
+
+It was an exciting weekend where I got to learn a lot of things. Things that I would
+not have thought of on my own.
+I only feel sad that I was not able to finish it on time.
